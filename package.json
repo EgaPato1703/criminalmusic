@@ -1,0 +1,22 @@
+{
+  "name": "criminal-music",
+  "version": "1.0.0",
+  "description": "Telegram Mini App - Criminal Music Platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "server:start": "cd server && npm start",
+    "client:build": "cd client && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "npm run client:build",
+    "start": "npm run server:start"
+  },
+  "keywords": ["telegram", "mini-app", "music", "criminal", "underground"],
+  "author": "Criminal Music Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
